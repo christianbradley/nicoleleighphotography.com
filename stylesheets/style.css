@@ -139,7 +139,7 @@ a:focus, a:hover, a:active {
 	}
 
 .header-image #title-area, .header-image #title-area #title, .header-image #title-area #title a {
-	background: url(images/logo.png);
+	background: url(/images/logo.png);
 	display: block; 
 	float: left;
 	width: 400px;
