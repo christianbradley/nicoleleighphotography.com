@@ -163,9 +163,9 @@ a:focus, a:hover, a:active {
 	width: 850px;
 	}
 	
-/***** Header Right Navigation ********************/
+/***** Header Pages/Category Widget Menu ********************/
 
-#header ul.nav, #header ul.menu {
+#header ul.nav {
 	width: auto;
 	float: right;
 	list-style: none;
@@ -175,14 +175,14 @@ a:focus, a:hover, a:active {
 	padding: 0;
 	}
 	
-#header ul.nav li, #header ul.menu li {
+#header ul.nav li {
 	float: left;
 	list-style: none;
 	margin: 0;
 	padding: 0;
 	}
 	
-#header ul.nav li a, #header ul.nav li a:visited, #header ul.menu li a, #header ul.menu li a:visited {
+#header ul.nav li a {
 	color: #FFFFFF;
 	display: block;
 	font-size: 12px;
@@ -192,15 +192,15 @@ a:focus, a:hover, a:active {
 	position: relative;
 	}
 
-#header ul.nav li a:hover, #header ul.nav li a:active, #header ul.nav .current_page_item a, #header ul.nav .current-cat a, #header ul.nav .current-menu-item a, #header ul.menu li a:hover, #header ul.menu li a:active, #header ul.menu .current_page_item a, #header ul.menu .current-cat a, #header ul.menu .current-menu-item a {
+#header ul.nav li a:hover, #header ul.nav li a:active, #header ul.nav .current_page_item a {
 	color: #FFFFFF;
 	}
 	
-#header ul.nav li a.sf-with-ul, #header ul.menu li a.sf-with-ul {
+#header ul.nav li a.sf-with-ul {
 	padding-right: 20px;
 	}	
 	
-#header ul.nav li a .sf-sub-indicator, #header ul.menu li a .sf-sub-indicator {
+#header ul.nav li a .sf-sub-indicator {
 	background: url(images/arrow-down.png);
 	display: block;
 	width: 10px;
@@ -212,7 +212,7 @@ a:focus, a:hover, a:active {
 	right: 5px;
 	}
 	
-#header ul.nav li li a, #header ul.nav li li a:link, #header ul.nav li li a:visited, #header ul.menu li li a, #header ul.menu li li a:link, #header ul.menu li li a:visited {
+#header ul.nav li li a, #header ul.nav li li a:link, #header ul.nav li li a:visited {
 	background: #222222;
 	color: #FFFFFF;
 	width: 148px; 
@@ -223,16 +223,16 @@ a:focus, a:hover, a:active {
 	position: relative;
 	}
 	
-#header ul.nav li li a:hover, #header ul.nav li li a:active, #header ul.menu li li a:hover, #header ul.menu li li a:active {
+#header ul.nav li li a:hover, #header ul.nav li li a:active {
 	background: #111111;
 	}
 
-#header ul.nav li li a .sf-sub-indicator, #header ul.menu li li a .sf-sub-indicator {
+#header ul.nav li li a .sf-sub-indicator {
 	background: url(images/arrow-right.png);
 	top: 10px;
 	}
 
-#header ul.nav li ul, #header ul.menu li ul {
+#header ul.nav li ul {
 	z-index: 9999;
 	position: absolute;
 	left: -999em;
@@ -242,23 +242,26 @@ a:focus, a:hover, a:active {
 	padding: 0;
 	}
 
-#header ul.nav li ul a, #header ul.menu li ul a { 
+#header ul.nav li ul a { 
 	width: 150px;
 	}
 
-#header ul.nav li ul ul, #header ul.menu li ul ul {
+#header ul.nav li ul a:hover, #header ul.nav li ul a:active { 
+	}
+
+#header ul.nav li ul ul {
 	margin: -31px 0 0 168px;
 	}
 
-#header ul.nav li:hover ul ul, #header ul.nav li:hover ul ul ul, #header ul.nav li.sfHover ul ul, #header ul.nav li.sfHover ul ul ul, #header ul.menu li:hover ul ul, #header ul.menu li:hover ul ul ul, #header ul.menu li.sfHover ul ul, #header ul.menu li.sfHover ul ul ul {
+#header ul.nav li:hover ul ul, #header ul.nav li:hover ul ul ul, #header ul.nav li.sfHover ul ul, #header ul.nav li.sfHover ul ul ul {
 	left: -999em;
 	}
 
-#header ul.nav li:hover ul, #header ul.nav li li:hover ul, #header ul.nav li li li:hover ul, #header ul.nav li.sfHover ul, #header ul.nav li li.sfHover ul, #header ul.nav li li li.sfHover ul, #header ul.menu li:hover ul, #header ul.menu li li:hover ul, #header ul.menu li li li:hover ul, #header ul.menu li.sfHover ul, #header ul.menu li li.sfHover ul, #header ul.menu li li li.sfHover ul {
+#header ul.nav li:hover ul, #header ul.nav li li:hover ul, #header ul.nav li li li:hover ul, #header ul.nav li.sfHover ul, #header ul.nav li li.sfHover ul, #header ul.nav li li li.sfHover ul {
 	left: auto;
 	}
 
-#header ul.nav li:hover, #header ul.nav li.sfHover, #header ul.menu li:hover, #header ul.menu li.sfHover { 
+#header ul.nav li:hover, #header ul.nav li.sfHover { 
 	position: static;
 	}
 
@@ -590,19 +593,6 @@ a:focus, a:hover, a:active {
 	padding: 0 0 2px 0;
 	border-bottom: 1px solid #333333;
 	}
-	
-/***** Taxonomy Description ********************/
-
-.taxonomy-description {
-	margin: 0 0 30px 0;
-	padding: 10px;
-	border: 1px solid #333333;
-	}
-	
-#content .taxonomy-description p {
-	margin: 0;
-	padding: 0;
-	}
 
 /***** Content-Sidebar Wrapper ********************/
 
@@ -744,7 +734,6 @@ a:focus, a:hover, a:active {
 	margin: 0;
 	padding: 5px 0 0 0;
 	border-top: 1px solid #333333;
-    clear: both;
 	}
 	
 /***** Author Box ********************/
@@ -958,7 +947,7 @@ img.wp-smiley, img.wp-wink {
 	border: 1px solid #E6E6E6;
 	}
 
-/***** Primary & Secondary Sidebars ********************/
+/***** Sidebar & Sidebar-Alt ********************/
 
 #sidebar {
 	width: 180px;
@@ -1742,4 +1731,14 @@ img.wp-smiley, img.wp-wink {
 	border-left: 1px solid #333333;
 	margin: 0 0 10px 0;
 	padding: 0;
-	}
+	}   
+
+#rotator {
+
+    position: relative;
+    width: 800px;
+    height: 533px;
+    margin: 0; padding: 0;
+    overflow: hidden;
+}
+
